@@ -1,0 +1,217 @@
+html {
+    scroll-behavior: smooth; /*сделать правную прокрутку*/
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #353945;
+    border: 1px solid red; /* Просто для удобства указать границу, чтобы увидеть размер и положение элементов */
+    min-height: 100vh; /* минимальная высота body не может быть меньше высоты страницы */
+    /*Убираем вертикальную прокрутку */
+    margin: 0; 
+    padding: 0;
+    /*Прижимаем footer к низу страницы*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /*указывает, что все элементы размещаются на максимальном расстоянии друг от друга, крайние прижаты к границам родителя.*/
+    /* свойство justify-content определяет выравнивание элементов по главной оси. 
+    По умолчанию у flexbox главная ось горизонтальная и свойство justify-content выравнивает элементы по горизонтали. 
+    Но указав свойство flex-direction: column;, мы тем самым переопределили направление главной оси.
+    Поэтому в данном случае justify-content определяет выравнивание по вертикали. */
+
+    background-color: rgba(241, 252, 252, 0.349);
+}
+
+/* Все элементы страницы, границы и внутренние отступы будут учитываться в значениях, 
+которые вы указываете в ширине и высоте элемента */
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1440px; /*Как любой блочный элемент, контейнер стремится занять всю ширину окна браузера. 
+    Так и происходит до тех пор, пока ширина окна не превышает 1440px, 
+    если окно браузера больше, свойство max-width ограничивает ширину контейнера.*/
+    margin: 0 auto;
+}
+
+.nav-list {
+    display: flex; /* Разместить все элементы навигации в 1 строку*/
+    justify-content: flex-end; /*сдвинуть все элементы вправо*/
+    align-items: center; /*выровнять по центру по высоте*/
+    list-style: none; /*убрать стандартные маркеры*/
+}
+
+.nav-link {
+    position: relative;
+/*добавить отступы ссылкам. Отступы добавляем ссылкам, а не элементам списка. Это позволяет увеличить площадь, по которой можно кликнуть, чтобы перейти по ссылке, и улучшает удобство пользования приложением.*/
+    padding: 0 12px;
+    line-height: 30px;
+/*Так как ссылки - строчные элементы, вертикальные padding у них создаются, 
+но не отталкивают другие элементы. Для строчных элементов вместо вертикальных padding удобнее указывать высоту строки. */
+    transition: .3s; /*Плавное изменение свойств*/
+    text-decoration: none; /*убрать подчеркивание у ссылок*/
+    font-size: 12px;
+    font-weight: 300;
+}
+
+/* Добавить интерактивность ссылкам при наведении*/
+.nav-item a {
+    color: #353945;
+    text-decoration: none;  
+    transition: color 0.5s;
+}
+.nav-item a:hover {
+    color: #d8db0f;
+}
+
+/* */
+
+/*Задали, что секции будут занимать 50% от окна*/
+.section {
+    width: 50%;
+}
+
+/*Для того, чтобы расположить секции в 2 колонки*/
+.main-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+/* Свойство display: flex у контейнера размещает секции по горизонтали, свойство width: 50% у секций указывает, что каждая секция занимает ровно половину ширины контейнера, 
+а благодаря свойству контейнера flex-wrap: wrap, секции, которые не помещаются по ширине контейнера переносятся на новую строку.*/
+
+/* Указать, что при уменьшении ширины экрана до 768px, секция будет занимать всю ширину,*/
+@media (max-width: 768px) {
+    .section {
+        width: 100%;
+    }
+}
+
+
+
+.section-profile {
+width: 100%;
+display: flex;
+justify-content: space-around;
+width: 100%;
+padding: 50px 30px 35px;
+border-bottom: 15px solid #e6c496;
+}
+
+.section-title {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #353945;
+    background-color: beige;
+}
+
+.section-profile-title {
+align-content: center;
+box-sizing: border-box;
+color: rgb(77, 35, 35);
+display: flex;
+flex-direction: column;
+font-family: Roboto, sans-serif;
+font-size: 18px;
+font-weight: normal;
+height: 200px;
+justify-content: center;
+line-height: 27px;
+text-align: center;
+text-transform: uppercase;
+width: 359.765625px;
+}
+
+
+
+
+
+
+/**ШРИФТЫ**/
+
+header {
+    background-color: beige;
+}
+
+.main_section_title {
+display: block;
+height: 50px;
+margin-block-end: 20px;
+margin-block-start: 26.559999465942383px;
+margin-bottom: 20px;
+margin-inline-end: 0px;
+margin-inline-start: 0px;
+padding-bottom: 0px;
+padding-left: 0px;
+padding-right: 0px;
+padding-top: 0px;
+position: relative;
+text-align: center;
+width: fit-content;
+font-size: 32px;
+text-transform: uppercase;
+color: #353945;
+letter-spacing: 5px;
+font-family: 'Open Sans', sans-serif;
+text-align: center;
+word-spacing: 10px;
+}
+
+.main_section_subtitle {
+font-family: 'Open Sans', sans-serif;
+font-size: 18px;
+text-transform: uppercase;
+color: #353945;
+letter-spacing: 5px;
+height: fit-content;
+display: block;
+height: 50px;
+margin-block-end: 22px;
+margin-block-start: 20px;
+margin-inline-end: 0px;
+margin-inline-start: 0px;
+margin-top: 20px;
+text-align: center;
+text-transform: uppercase;
+width: fit-content;
+text-align: center;
+word-spacing: 10px;
+}
+
+
+.container-header{
+    background-color: #d6da18;
+}
+
+footer {
+    background-color: beige;
+    display: flex; /* Разместить все элементы навигации в 1 строку*/
+    justify-content: center; /*сдвинуть все элементы вправо*/
+    align-items: center; /*выровнять по центру по высоте*/
+    list-style: none; /*убрать стандартные маркеры*/
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #353945;
+    letter-spacing: 1px;
+}
+
+img {
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.6) 0px 1px 4px 0px;
+    display: block;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    color: rgb(77, 35, 35);
+    filter: grayscale(0.2) brightness(1.05);
+    font-family: Roboto, sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 27px;
+}
