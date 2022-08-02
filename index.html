@@ -4,112 +4,65 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV-Pivovarova_Sofya</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="assets/2022-06-16 16.19.36.ico">
-    <link rel="preconnect" href="https://fonts.googleapis.com"> 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <meta name="keywords" content="CV, resume, frontend">
+    <meta name="description" content="вводный урок по html, создание своего резюме">
+    <title>Sofya_CV</title>
 </head>
-
 <body>
-    <header class="header">
-        <div class="container header-container">
-            <nav class="nav">
-                <ul class="nav-list">
-                  <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
-                  <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
-                  <li class="nav-item"><a href="#summary" class="nav-link">Summary</a></li>
-                  <li class="nav-item"><a href="#hard_skills" class="nav-link">Hard skill</a></li>
-                  <li class="nav-item"><a href="#code_example" class="nav-link">Code example</a></li>
-                  <li class="nav-item"><a href="#soft_skills" class="nav-link">Soft skills</a></li>
-                  <li class="nav-item"><a href="#languages" class="nav-link">Languages</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+    <h1>Sofya_Pivovarova_CV</h1>
+    <img src="https://i.pinimg.com/736x/f4/d2/96/f4d2961b652880be432fb9580891ed62.jpg" alt="это фото котика" width="350"> 
+    <p>Hello, my name is <em>Sonya.</em> I would like to become <strong> Frontend programmer.</strong></p>
+    <p>I'm 25 years old</p>
+    <a href="https://instagram.com/spvvrv" target="_blank">Instagram</a>
+    <br>
+    <a href="https://linkedin.com/spvvrv" target="_blank">Linkedin</a>
+    <br>
+    <a href="https://github.com/spvvrv" target="_blank">Github</a>
+
+    <h2>My hobbies</h2>
+    <ul>
+        <li>Sleep</li>
+        <li>Eat</li>
+        <li>Tic-Tok</li>
+    </ul>
+
+<table border="1" width="400">
+    <thead>
+        <tr>
+            <th>Название работы</th>
+            <th>Должность </th>
+            <th>Период, когда вы там работали</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Mcdonalds</td>
+            <td>Director</td>
+            <td>2021-2022</td>
+        </tr>
+    </tbody>
+</table>
+
+<h2>Связаться со мной</h2>
+
+<label for="text">Your name</label>
+<input type="text" id="text" placeholder="Your name">
+<br>
+<label for="email">Your email</label>
+<input type="email" id="email" placeholder="Your email">
+<br>
+<label for="email">Your email</label>
+<input type="email" id="email" placeholder="Your email">
+<br>
+<label for="Message">Your message</label>
+<br>
+<textarea id="message" cols="30" rows="10" placeholder="Write your message"></textarea>
+<br>
+<button type="submit">
+    Submit
+</button>
 
 
-    <main class="main">
-        <div class="container main-container">  <!--тут целых два класса, чтобы расположить секции в 2 колонки, см. в СSS свойства main-container --> 
-        
-            <section class="section section-profile">
-            <img src="assets/2022-06-16 16.19.36.ico" alt="Sofya_>Pivovarova_CV">
-            <div class="section-profile-title">
-            <h1 class="main_section_title">Pivovarova Sofya</h1>
-            <h3 class="main_section_subtitle">Junior Front-end Developer</h3>
-            </div>
-            </section>
-
-            <section class="section" id="contacts">
-            <h2 class="section-title"> Contact information </h2>
-            <p>
-                [Github](https://github.com/spvvrv)
-                Phone: +7(968)780-04-10
-                E-mail: s.pivovarova@rambler.ru
-                Telegram:[@spvvrv](https://t.me/spvvrv)
-                [Linkedin](https://www.linkedin.com/in/sofya-pivovarova/)
-            </p>
-            </section>
-
-        <section class="section" id="education">
-            <h2 class="section-title">Education</h2>
-            <li>Peoples' Friendship University of Russia, Moscow
-                Philological, Advertising and public relations, 2014-2018</li>
-                <li>RS Shcool JS / FRONT-END (RU), 2021 - present</li>
-                <li>Geek Brains 2022 - present</li>
-        </section>
-
-        <section class="section" id="summary">
-            <h2 class="section-title">Summary</h2>
-            <p> Recently I realized that one “business of life” can not be limited, so I decided on global changes. For 7 years I have studied my past direction from and to, so now I want to scale my successes in other areas. Ready for full immersion in processes, projects and team. From me, involvement, dedication, control, development of myself and colleagues, and much more.
-                I think that front-end development is the most suitable business for revealing my talents.</p> 
-        </section>
-
-        <section class="section" id="hard_skills">
-            <h2 class="section-title">Hard Skills</h2>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Java Script (Basic)</li>
-            <li>Git/GitHub</li>
-        </section>
-
-        <section class="section" id="code_example">
-            <h2 class="section-title">Code example</h2>
-            <p>
-                function sum(a, b) {
-                    return a + b;
-                }
-                let result = sum(1, 2);
-            alert( result );
-            </p>
-        </section>
-
-        <section class="section" id="soft_skills">
-            <h2 class="section-title">Soft Skills</h2>
-            <li>Responsibility</li>
-            <li>Agile Project Management</li>
-            <li>Team management</li>
-            <li>Teamwork</li>
-            <li>Organizational skills</li>
-            <li>Customer development</li>
-            <li>Project management</li>
-            <li>Proactive</li> 
-        </section>
-
-        <section class="section" id="languages">
-            <h2 class="section-title">Languages</h2>
-            <li>Russian - native speaker</li>
-            <li>English B2</li>
-        </section>
-    </div>
-</main>
-
-    <footer class="footer">
-        <div class="container">
-            <p>call me maybe</p>
-        </div>
-    </footer>
-
+    
 </body>
 </html>
